@@ -1,0 +1,61 @@
+body{
+    background: black;
+    margin: 0px;
+}
+header{
+    background: radial-gradient(#00ff62, #fbff00);
+    height: 10%;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+div{
+    background: radial-gradient(#3cff00, #82b100);
+    padding:5px;
+    min-height:850px;
+}
+nav{
+    text-align: center;
+    background: radial-gradient(#00ff62, #fbff00);
+    min-height:850px; 
+    padding:5px;
+    display: inline-block;
+}
+main{
+    float: right;
+    padding: 10px;
+}
+footer{
+    background: radial-gradient(#00ff62, #fbff00);
+    height: 50px; 
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+}
+p{
+    color:rgb(68, 0, 255);
+    font-size: 18px;
+}
+table{
+    color:rgb(68, 0, 255); 
+    border-color:rgb(0, 0, 0);
+    text-align: center;
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+}
+.a{
+    background: linear-gradient(rgb(62, 129, 0),rgb(123, 255, 0));
+}
+.b{
+    background: linear-gradient(rgb(255, 251, 0),rgb(255, 0, 0));
+}
+.c{
+    background: linear-gradient(rgb(0, 255, 0),rgb(0, 255, 234));
+}
+.d{
+    background: linear-gradient(rgb(81, 255, 0),rgb(255, 196, 0));
+}

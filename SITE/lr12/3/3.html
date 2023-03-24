@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+ <head>
+     <title>General 12-3</title>
+     <meta charset="utf-8">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <link rel="stylesheet" href="3.css">
+ </head>
+ <body>
+    <div class='high'>
+        <div class="low">
+            1
+        </div>
+        <div class="low">
+            2
+        </div>
+        <div class="low">
+            3
+        </div>
+        <div class="low">
+            4
+        </div>
+        <div class="low">
+            5
+        </div>
+    </div>
+    <div class='high'>
+        <div class="low">
+            6
+        </div>
+        <div class="low">
+            7
+        </div>
+        <div class="low">
+            8
+        </div>
+        <div class="low">
+            9
+        </div>
+        <div class="low">
+            10
+        </div>
+    </div>
+     <script>
+         $(function(){
+             var x=prompt("Введите номер div'a")
+             var y;
+
+             if(x<=5)
+             {
+                 y=1;
+             }
+             else{
+                 y=2;
+                 x-=5;
+             }
+            $(".high:nth-child("+y+")>.low:nth-child("+x+")").css("border","1px black solid");
+            $(".high:nth-child("+y+")>.low:nth-child("+x+")").css("background","rgb(217, 255, 0)");
+             for(let i=5;i>x;i--)
+             {
+                $(".high:nth-child("+y+")>.low:nth-child("+i+")").css("background","rgb(21, 255, 0)");
+             }
+             for(let i=0;i<x;i++)
+             {
+                $(".high:nth-child("+y+")>.low:nth-child("+i+")").css("background","rgb(0, 238, 255)");
+             }
+        });
+     </script>
+ </body>
+</html>

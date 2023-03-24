@@ -1,0 +1,56 @@
+<table id="table">
+  <tr>
+    <td>Название</td>
+    <td>Цена</td>
+    <td>Количество</td>
+  </tr>
+</table>
+<br>
+    <form id="userForm">
+      <input type="submit" value="GET" id="getButton">
+        <input type="number" id="data" placeholder="Поле для ввода">
+        <input type="submit" value="POST" id="postButton">
+      </form>
+<br>
+<div id="result">
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+   $('#postButton').click(function(event){
+     event.preventDefault();
+    $.post("getData",{'value':$("#data").val()}, function(data){
+       $('#result').html(data)
+    });
+  });
+
+  $('#getButton').click(function(event){
+     event.preventDefault();
+    $.get("getTable", function(data){
+       $('#table').html(data)
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta charset="utf-8" />
+</head>
+<body >
+    <h1>- Простейший чат -</h1>
+    <form name="publish">
+    <input type="text" name="message" />
+
+    <script src="script.js"></script>
+
+    <script>
+        FormInitialize(document.forms.publish, 'publish');
+        // при однотипных запросах сервер может кэшировать ответ
+        // чтобы точно получить новый ответ,
+        // мы отправляем запрос с рандомным параметром
+        SubscribePanel(document.getElementById('chat'),
+        'subscribe?random=' + Math.random());
+        </script>
+</body>
+</html>

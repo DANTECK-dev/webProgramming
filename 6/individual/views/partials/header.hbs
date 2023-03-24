@@ -1,0 +1,32 @@
+<h2 id="hdr"></h2>
+    <span id="date"></span>
+    <br>
+    <span id="time"></span>
+
+    <div id="formDiv">
+<form id="userForm">
+        <input type="text" id="userName" placeholder="Поле для ввода">
+        <input type="password" id="userPassword" placeholder="Поле для ввода">
+        <input type="submit" value="Отправить" id="postButton" style="visibility:hidden">
+      </form>
+    </div>
+     
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    if(sessionStorage.getItem("user")!=undefined)
+    {
+        document.getElementById("formDiv").innerHTML=sessionStorage.getItem("user");
+    }
+    else{
+$('#postButton').click(function(event){
+     event.preventDefault();
+    $.post("getData",{'userName':$("#userName").val(),'userPassword':$("#userPassword").val()}, function(data){
+       $('#formDiv').html(data);
+
+    sessionStorage.setItem('user',"admin")
+    });
+  });
+    }
+</script>

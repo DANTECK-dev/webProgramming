@@ -1,0 +1,8 @@
+p{
+    background-color: red;
+    font-size: 25px;
+    font-style: italic;
+}
+p:first-child{
+    background-color: rgba(0, 0, 255, 0.5);
+}

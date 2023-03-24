@@ -1,0 +1,39 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <div id="advertising"></div>
+            <p id="rndclr">
+                Леса — это легкие нашей планеты, которые очищают воздух.
+                Также миссией лесов является поддержка водного баланса земли, с целью предотвращения засухи. 
+                Наибольшее количество уникальных животных и растений находится на территории лесных массивов.
+                Млекопитающие находят себе пропитание и убежище, а растения осуществляют фотосинтез. 
+                Все выделяют порядка 3 основных видов леса, которые отличаются своей флорой, фауной, территорией и климатическими условиями.
+                К ним относятся: бореальные леса, тропические леса и умеренные леса. 
+            </p>
+            <p id="someTable">
+            </p>
+            <p id="pageDescription">Главная страница содержит информацию о других страницах</p>
+
+<form id="userForm">
+        <input type="text" id="name" placeholder="Поле для ввода">
+        <input type="text" id="description" placeholder="Поле для ввода">
+        <input type="submit" value="Отправить" id="postButton">
+      </form>
+
+<table id="userTable">
+  <tr class="boldHere">
+    <td>Наименование</td>
+    <td>Описание</td>
+  </tr>
+ 
+</table>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$('#postButton').click(function(event){
+     event.preventDefault();
+    $.post("MainUserTable",{'name':$("#name").val(),'description':$("#description").val()}, function(data){
+       $('#userTable').html(data);
+    }); 
+  });
+</script>

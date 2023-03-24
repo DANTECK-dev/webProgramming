@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+ <head>
+    <title>
+        General 7-5
+    </title>
+    <meta charset="utf-8">
+ </head>
+ <body >
+    <script>
+        function fgener(value)
+        {
+            var arr=new Array();
+            var count = 0;
+            console.log("fgener");
+            
+            function findmas(string)
+            {
+                let search=false;
+                console.log("findmas");
+                for(let i=0;i<Object.keys(arr).length;i++)
+                {
+                    if(arr[i]===string)
+                    {
+                        search=true;
+                    }
+                }
+
+                if(search)
+                {
+                    count++;
+                    console.log(arr);
+                    console.log(count);
+                    return true;
+                }
+                else{
+                    arr.push(string);
+                    console.log(arr);
+                    console.log(count);
+                    return false;
+                }
+            }
+
+            for(let i=0;i<Object.keys(value).length;i++)
+            {
+                if(findmas(value[i]))
+                {
+                    document.writeln("+");
+                }
+                else{
+                    document.writeln("-");
+                }
+            }
+           
+        }
+        var array=new Array();
+
+        for(let i=0;i<4;i++)
+        {
+            array.push(prompt("Введите строку"));
+        }
+        fgener(array);
+   </script>
+ </body>
+ </html>

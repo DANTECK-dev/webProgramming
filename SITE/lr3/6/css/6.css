@@ -1,0 +1,10 @@
+.left{
+background-repeat: no-repeat;
+background-position: left;
+background-image: url(https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.right{
+    background-repeat: repeat-y;
+    background-position: right;
+    background-image: url(https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}

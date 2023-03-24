@@ -1,0 +1,17 @@
+table{
+    min-width: 400px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 200px;
+    border: black solid;
+}
+
+tr{
+    border: black solid;
+    max-height: 50%;
+}
+td{
+    border: black solid;
+    text-align: center;
+    max-width: 33%;
+}

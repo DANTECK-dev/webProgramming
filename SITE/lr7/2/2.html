@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+ <head>
+    <title>
+        General 7-2
+    </title>
+    <meta charset="utf-8">
+ </head>
+ <body>
+    <script>
+        function factorial(n) {
+            return (n != 0) ? n * factorial(n - 1) : 1;
+        }
+
+        (function (n){
+            var result = factorial(n);
+            alert("Факториал числа = " + result);
+        }(4));
+
+    </script>
+ </body>
+ </html>

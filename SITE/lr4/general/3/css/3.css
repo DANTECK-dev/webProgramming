@@ -1,0 +1,32 @@
+div{
+text-align: center;
+}
+.button {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#a {
+    background: linear-gradient(180deg, #00c3ff, #ffffff);
+}
+#b{
+    background: linear-gradient(#31f300, #58c400 48%, #16be00 52%, #31f300);
+}
+#c{
+    background: linear-gradient(#31f300,#e4e4e4 1%, #00c3ff 99%, #009ac9);
+    color:#ffffff;
+}
+#d{
+    background: linear-gradient(180deg, #ffffff 5%, #777777 20%, #777777, black);
+    border: 2px solid rgb(78, 78, 78);
+    color:#ffffff;
+}
+#e{
+    background: linear-gradient(180deg, rgb(226, 226, 226) 80%, rgb(204, 204, 204) 20%);
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 0px solid gray;
+    border-bottom: 0px solid gray;
+}

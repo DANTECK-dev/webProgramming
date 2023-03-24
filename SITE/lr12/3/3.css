@@ -1,0 +1,15 @@
+
+.low{
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+}
+
+.high{
+    width: 200px;
+    height: 200px;
+    border: 1px black solid;
+    margin-bottom: 30px;
+    margin-left: 40%;
+    text-align: center;
+}

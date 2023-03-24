@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="./css.css">
+  <meta charset="utf-8">
+ </head>
+ <body>
+  <header>
+    {header}
+  </header>
+  <div>
+    <main>
+      <p id="pageDescription" id="someTable"class="hidden"></p>
+      <div id="advertising"></div>
+            <table class="b" id="rndclr">
+                <tr>
+                  <td>Название</td>
+                  <td>Фотография</td>
+                  <td>Информация</td>
+                  <td>Ссылка</td>
+                </tr>
+                <tr>
+                    <td>Бурый медведь</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Medved_mzoo.jpg/275px-Medved_mzoo.jpg"></td>
+                    <td>Бу́рый медве́дь, или обыкнове́нный медве́дь, <br>
+                         млекопитающее семейства медвежьих;<br> 
+                         один из самых крупных наземных хищников.</td>
+                    <td><a href="https://ru.wikipedia.org/wiki/%D0%91%D1%83%D1%80%D1%8B%D0%B9_%D0%BC%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D1%8C" target="-blank">Википедия</a></td>
+                </tr>
+                <tr>
+                    <td>Гризли</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Lightmatter_Alaskan_brownbear.jpg/266px-Lightmatter_Alaskan_brownbear.jpg"></td>
+                    <td>Гри́зли — название одного либо нескольких американских подвидов бурого медведя.<br> 
+                        Распространён преимущественно на Аляске и в западных районах Канады.<br> 
+                        Небольшая популяция этих животных сохранилась<br> 
+                         в континентальной части США в Монтане,<br> 
+                        в районе Йеллоустона и на северо-западе Вашингтона.</td>
+                    <td><a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B8%D0%B7%D0%BB%D0%B8" target="-blank">Википедия</a></td>
+                </tr>
+            </table>
+            <div id="userTable"></div>
+            <button id="contentButton" onclick="addcontent()">Добавить</button>
+    </main>
+    <nav>
+      <h2>Навигация по сайту</h2>
+  
+  
+      <div class="dropdown">
+        <button onclick="buttonClick()" class="dropbtn">Животные</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="Bears.html">Медведи</a> 
+          <a href="Artiodactyls.html">Парнокопытные</a>
+          <a href="Dogs.html">Псовые</a>
+          <a href="Rodents.html">Грызуны</a>
+        </div>
+      </div>
+       
+      <div class="dropdown2">
+        <button onclick="buttonClick2()" class="dropbtn2">Прочее</button>
+        <div id="myDropdown2" class="dropdown-content2">
+          <a href="Main.html">Главная страница</a>
+          <button id="rndLink">
+        </div>
+      </div>
+  
+     </nav>
+  </div>
+  <footer>
+    Выполнил: Жилин Д.Е. Б660-A
+  </footer>
+  <script src="./js.js"></script>
+ </body>
+</html>

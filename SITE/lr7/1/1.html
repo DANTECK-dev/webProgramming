@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+    <title>
+        General 7-1
+    </title>
+    <meta charset="utf-8">
+ </head>
+ <body>
+    <script>
+        function factorial(n) {
+            
+            return (n != 0) ? n * factorial(n - 1) : 1;
+        }
+
+        var x=prompt("Введите число");
+        if(x >= 0)
+        {
+            alert(factorial(x));
+           
+        }
+        else if(x<0)
+        {
+            console.log("Число меньше 0!!!");
+        }
+        else {
+            console.log("Ошибка ввода!!!");
+        }
+    </script>
+ </body>
+ </html>

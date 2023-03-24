@@ -1,0 +1,65 @@
+
+
+<form  id="myForm">
+  <div>
+    <input type="radio" id="contactChoice1"
+     name="contact" value="time" checked="checked">
+    <label for="contactChoice1">Вывод текущего времени через alert()</label>
+
+    <input type="radio" id="contactChoice2"
+     name="contact" value="rndColor">
+    <label for="contactChoice2">Изменение цвета кнопки на случайный</label>
+
+    <input type="radio" id="contactChoice3"
+     name="contact" value="clrDiv">
+    <label for="contactChoice3">Обернуть кнопку в блок div случайного цвета (c некоторым padding-ом)</label>
+
+    <button id="bA" type="submit">Button A</button>
+
+    <button id="bB" type="submit">Button B</button>
+  </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script >
+   $('#bB').click(function(event){
+        event.preventDefault();
+   });
+
+   $('#bA').click(function(event){
+     event.preventDefault();
+     if($('#contactChoice1').is(':checked'))
+     {
+        $.getScript('time.js')
+     }
+     else if($('#contactChoice2').is(':checked'))
+     {
+        $.getScript('rndColor.js')
+     }
+     else{
+        $.getScript('clrDiv.js')
+     }
+   });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+    <title>
+        General 7-6
+    </title>
+    <meta charset="utf-8">
+ </head>
+ <body >
+    <script>
+      function fibanachi(value)
+      {
+         console.log("fibanachi");
+         var fib1 = 1;
+         var fib2=1;
+         var i=0;
+         var fib_sum=0;
+         var array=new Array
+
+         function next()
+         {
+            console.log("next");
+            fib_sum = fib1 + fib2;
+            fib1 = fib2;
+            fib2 = fib_sum;
+            i++;
+            document.writeln(fib2);
+            var arr=new Array(fib1,fib2,i,fib_sum);
+            return arr;
+         }
+         while(i < value - 1)
+         {
+            array=next();
+            fib1=array[0];
+            fib2=array[1];
+            i=array[2];
+            fib_sum=array[3];
+         }
+         
+         return "<p>Нужный элемент = "+fib1+"</p>";
+      }
+      document.writeln(fibanachi(parseInt(prompt("Введите число"))));
+    </script>
+ </body>
+ </html>

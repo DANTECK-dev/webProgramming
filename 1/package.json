@@ -1,0 +1,9 @@
+{
+	"name":"app",
+	"version":"1.0.0",
+	"scripts":{
+		"start":"node app.js",
+		"start1":"node app.js 5",
+		"start2":"node app.js 10"
+	}
+}
